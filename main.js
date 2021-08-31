@@ -1,18 +1,3 @@
-let str1 = 'abcde';
-let str2 = 'hello world!';
-let str3 = 'I am Betman';
-let str = "Любо, братцы, любо!";
-let result = str.replace(/ю/g, '');
-let str4 = "Я ЛюБлЮ JavaScript";
-let reg = /люблю/i;
-
-console.log(reg);
-console.log(reg.test(str4));
-console.log(str.replace(/любо/ig, '$& yes!'));
-console.log(str.replace(/любо/ig, '$`yes!'));
-console.log(str.replace(/любо/ig, '$\'yes!'));
-
-
 // у нас есть номер телефона вида "+7(903)-123-45-67",
 // и нам нужно превратить его в строку только из чисел: 79031234567.
 
