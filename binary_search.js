@@ -8,20 +8,20 @@ const array4 = [-2, 5, 8, 9, 11, 13, 26, 69];
 const array5 = ['adz', 'bae', 'dwet', 'rere', 'wake'];
 
 // функция возвращает индекс искомого элемента или -1 если элемента в массиве нет.
-const binarySearch = function (nums, target) {
+const binarySearch = function (numbers, target) {
     let left = 0;
-    let rigth = nums.length - 1;
+    let right = numbers.length - 1;
     let mid;
 
-    while (left <= rigth) {
-        mid = Math.round((rigth - left) / 2) + left;
-        if (target === nums[mid]) {
+    while (left <= right) {
+        mid = Math.round((right - left) / 2) + left;
+        if (target === numbers[mid]) {
             return mid;
         }
-        else if (target < nums[mid]) {
-            rigth = mid - 1;
+        else if (target < numbers[mid]) {
+            right = mid - 1;
         }
-        else if (target > nums[mid]) {
+        else if (target > numbers[mid]) {
             left = mid + 1;
         }
     }
