@@ -1,2 +1,3 @@
 .editorconfig
+debounce.ts
 /node_modules
